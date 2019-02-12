@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+</head>
+<center>
+<body background="SplitShire_0306-1800x1200.jpg">
+<a href="index.html">
+  		<img src="69524.png" align="right" alt="index.html" width="48" height="48">
+		</a><br><br>
+ <h1 style="color:E6E6FA;" >Welcome to Home Page</h1>
+	
+	<br><br>
+	 <button onclick = "location.href = 'rest/hello/viewall'" style="padding:10px 20px 10px 10px;">View All Comments</button><br><br>
+     <button onclick = "location.href = 'rest/hello/YourComments'" style="padding:10px 10px 10px 10px;">View Your Comments</button><br><br>
+     
+     <button onclick = openForm() style="padding:8px 30px 8px 30px;">Add Comment</button><br><br>
+     <form action="rest/hello/AddComment" method="post" id="myForm" style="display: none;">
+      <h4>Comment</h4><br>
+     <textarea rows="4" cols="20"  name="comment"></textarea><br><br>
+     <input type="Submit" style="padding:10px 20px 10px 20px;" value = "Add">
+     </form>
+     <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+</script>
+</body>
+</center>
+</html>
